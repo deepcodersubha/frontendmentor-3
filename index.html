@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <div class="navbar">
+      <a href="#">W.</a>
+
+      <!-- desktop menu -->
+      <ul class="desktopMenu">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+
+      <!-- mobile menu -->
+      <div class="overlay">
+        <ul class="mobileMenu">
+          <span class="close">&times</span>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <div class="hamlines"></div>
+        <div class="hamlines"></div>
+        <div class="hamlines"></div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="mainWrapper">
+    <div class="wrapperTop">
+      <div class="wrapperTopLeft">
+
+        <figure>
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+        </figure>
+
+        <div class="wrapperTopLeftBottom">
+
+          <div class="heading">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+
+          <div class="para">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands
+              of the
+              people.
+              But is it really fulfilling its promise?
+            </p>
+
+            <button>READ MORE</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wrapperTopRight">
+        <div class="newsBlogs">
+          <h2>News</h2>
+          <ul>
+
+            <li>
+              <p>Hydrogen VS Electric Cars</p>
+              <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+
+            <li>
+              <p>The Downsides of AI Artistry</p>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </li>
+
+            <li>
+              <p>Is VC Funding Drying Up?</p>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrapperBottom">
+
+      <div class="otherLinks">
+
+        <figure>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        </figure>
+
+        <div class="details">
+          <p>01</p>
+          <p>Reviving Retro PCs</p>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+
+      </div>
+
+      <div class="otherLinks">
+
+        <figure>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        </figure>
+
+        <div class="details">
+          <p>01</p>
+          <p>Reviving Retro PCs</p>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+
+      </div>
+
+      <div class="otherLinks">
+
+        <figure>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        </figure>
+
+        <div class="details">
+          <p>01</p>
+          <p>Reviving Retro PCs</p>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobileMenu');
+    const close = document.querySelector('.close');
+    const overlay = document.querySelector('.overlay');
+
+    close.addEventListener("click", function () {
+      mobileMenu.style.display = "none";
+      
+    })
+
+    hamburger.addEventListener("click", function () {
+      mobileMenu.style.display = "block";
+
+    })
+
+
+  </script>
+</body>
+
+</html>
